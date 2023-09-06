@@ -28,11 +28,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 </p>
 <p>
-This is my tutorial on network security groups and network protocol inspection. You must first create two virtual machines on Azure. There will be two computers, one running Linux and the other Windows 10. Both must be on the same VNET and have two CPUs. Once that is finished, download [Wireshark](https://www.wireshark.org/download.html) onto the Windows computer. After installation, launch Wireshark and only allow ICMP traffic through. A network layer protocol called ICMP relays messages about problems with network connections. This protocol is used by the ping tool, which checks host connectivity. When we configure Wirehsark to just record ICMP packets and ping our Linux machine's private IP address, we are able to visually see the packets on wireshark.
+This is my tutorial on network security groups and network protocol inspection. You must first create two virtual machines on Azure. There will be two computers, one running Linux and the other Windows 10. Both must be on the same VNET and have two CPUs. Once that is finished, download Wireshark (https://www.wireshark.org/download.html) onto the Windows computer. After installation, launch Wireshark and only allow ICMP traffic through. A network layer protocol called ICMP relays messages about problems with network connections. This protocol is used by the ping tool, which checks host connectivity. When we configure Wirehsark to just record ICMP packets and ping our Linux machine's private IP address, we are able to visually see the packets on wireshark.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.gyazo.com/dd508bd133f75474ceef607359bcb85b.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 We can inspect each individual packet and see the actual data that is being sent in each ping. the picture below demonstrates just that. 
